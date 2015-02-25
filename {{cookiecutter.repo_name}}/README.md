@@ -1,4 +1,4 @@
-# {{ cookiecutter.pypi_project_name }}
+# {{ cookiecutter.repo_name }}
 
 [![build-status-image]][travis]
 [![pypi-version]][pypi]
@@ -16,7 +16,7 @@
 Install using `pip`...
 
 ```bash
-pip install {{ cookiecutter.pypi_project_name }}
+pip install {{ cookiecutter.repo_name }}
 ```
 
 ## Example
@@ -55,5 +55,5 @@ make html && open _build/html/index.html
 
 [build-status-image]: https://secure.travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?branch=master
 [travis]: http://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}?branch=master
-[pypi-version]: https://pypip.in/version/{{ cookiecutter.pypi_project_name }}/badge.svg
-[pypi]: https://pypi.python.org/pypi/{{ cookiecutter.pypi_project_name }}
+[pypi-version]: https://pypip.in/version/{{ cookiecutter.repo_name }}/badge.svg
+[pypi]: https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}
