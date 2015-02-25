@@ -4,7 +4,7 @@ cookiecutter-pypackage
 
 Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
 
-* Free software: BSD license
+* Free software: MIT license
 * Pytest_ runner: Supports `unittest`, `pytest`, `nose` style tests and more
 * Travis-CI_: Ready for Travis Continuous integration testing
 * Tox_ testing: Setup to easily test for python 2.6, 2.7, 3.3 and PyPy_
