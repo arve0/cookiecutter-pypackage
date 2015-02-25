@@ -11,9 +11,10 @@ Cookiecutter template for a Python package. See
     integration testing
 -   [Tox](http://testrun.org/tox/) testing: Setup to easily test for
     python 2.6, 2.7, 3.3 and [PyPy](http://pypy.org/)
--   [Sphinx](http://sphinx-doc.org/) docs: Documentation raedy for
-    generation with, for example,
-    [ReadTheDocs](https://readthedocs.org/)
+-   [Sphinx](http://sphinx-doc.org/) docs: Automatic API reference 
+    documentation with
+    [numpy or google docstrings](https://pypi.python.org/pypi/sphinxcontrib-napoleon).
+    Ready for generation with for example [ReadTheDocs](https://readthedocs.org/)
 -   [Wheel](http://pythonwheels.com) support: Use the newest python
     package distribution standard from the get go
 
