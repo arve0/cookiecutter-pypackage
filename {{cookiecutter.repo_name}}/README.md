@@ -42,7 +42,7 @@ tox
 To build the documentation, you'll need sphinx:
 
 ```bash
-pip install -r doc/requirements.txt
+pip install -r docs/requirements.txt
 ```
 
 To build the documentation:
