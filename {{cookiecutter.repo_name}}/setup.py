@@ -13,6 +13,7 @@ if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
     sys.exit()
 
+os.system('make rst')
 readme = open('README.rst').read()
 doclink = """
 Documentation

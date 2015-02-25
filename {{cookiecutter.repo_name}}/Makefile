@@ -41,16 +41,19 @@ coverage:
 docs:
 	rm -f docs/{{ cookiecutter.repo_name }}.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ {{ cookiecutter.repo_name }}
+	sphinx-apidoc -M -o docs/ {{ cookiecutter.repo_name }}
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
 
-release: clean
+release: clean rst
 	python setup.py sdist upload
 	python setup.py bdist_wheel upload
 
-sdist: clean
+rst:
+	pandoc --from=markdown --to=rst README.md -o README.rst
+
+sdist: clean rst
 	python setup.py sdist
 	python setup.py bdist_wheel upload
 	ls -l dist
