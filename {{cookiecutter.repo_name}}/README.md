@@ -48,8 +48,7 @@ pip install -r docs/requirements.txt
 To build the documentation:
 
 ```bash
-cd docs
-make html && open _build/html/index.html
+make docs
 ```
 
 
