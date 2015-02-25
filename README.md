@@ -10,7 +10,7 @@ Cookiecutter template for a Python package. See
 -   [TravisCCI](http://travis-ci.org/): Ready for Travis Continuous
     integration testing
 -   [Tox](http://testrun.org/tox/) testing: Setup to easily test for
-    python 2.6, 2.7, 3.3 and [PyPy](http://pypy.org/)
+    python 2.7 and 3.4
 -   [Sphinx](http://sphinx-doc.org/) docs: Automatic API reference 
     documentation with
     [numpy or google docstrings](https://pypi.python.org/pypi/sphinxcontrib-napoleon).
