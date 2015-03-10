@@ -7,10 +7,6 @@
 
 {{ cookiecutter.project_short_description }}
 
-## Requirements
-
-* Python (2.7, 3.4)
-
 ## Installation
 
 Install using `pip`...
