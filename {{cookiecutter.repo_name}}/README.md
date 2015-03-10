@@ -23,33 +23,33 @@ pip install {{ cookiecutter.repo_name }}
 
 TODO: Write example.
 
-## Testing
+## API reference
 
-Install testing requirements:
+API reference is at http://{{ cookiecutter.repo_name }}.rtfd.org."""
 
+## Development
+Install dependencies and link development version of {{ cookiecutter.repo_name }} to pip:
 ```bash
-pip install tox
+pip install -r dev-requirements.txt
+./setup.py develop
 ```
 
-Run:
-
+### Testing
 ```bash
 tox
 ```
 
-## Documentation
-
+### Build documentation locally
 To build the documentation, you'll need sphinx:
-
 ```bash
 pip install -r docs/requirements.txt
 ```
 
 To build the documentation:
-
 ```bash
 make docs
 ```
+
 
 
 [build-status-image]: https://secure.travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}.png?branch=master

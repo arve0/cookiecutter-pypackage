@@ -15,17 +15,12 @@ if sys.argv[-1] == 'publish':
 
 os.system('make rst')
 readme = open('README.rst').read()
-doclink = """
-Documentation
--------------
-
-The full documentation is at http://{{ cookiecutter.repo_name }}.rtfd.org."""
 
 setup(
     name='{{ cookiecutter.repo_name }}',
     version='{{ cookiecutter.version }}',
     description='{{ cookiecutter.project_short_description }}',
-    long_description=readme + '\n\n' + doclink,
+    long_description=readme,
     author='{{ cookiecutter.full_name }}',
     author_email='{{ cookiecutter.email }}',
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
