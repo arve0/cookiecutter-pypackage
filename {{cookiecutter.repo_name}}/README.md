@@ -2,6 +2,7 @@
 
 [![build-status-image]][travis]
 [![pypi-version]][pypi]
+[![wheel]][pypi]
 
 ## Overview
 
@@ -54,3 +55,4 @@ make docs
 [travis]: http://travis-ci.org/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}?branch=master
 [pypi-version]: https://pypip.in/version/{{ cookiecutter.repo_name }}/badge.svg
 [pypi]: https://pypi.python.org/pypi/{{ cookiecutter.repo_name }}
+[wheel]: https://pypip.in/wheel/{{ cookiecutter.repo_name }}/badge.svg
