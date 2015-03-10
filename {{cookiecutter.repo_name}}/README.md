@@ -26,6 +26,8 @@ API reference is at http://{{ cookiecutter.repo_name }}.rtfd.org.
 ## Development
 Install dependencies and link development version of {{ cookiecutter.repo_name }} to pip:
 ```bash
+git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
+cd {{ cookiecutter.repo_name }}
 pip install -r dev-requirements.txt
 ./setup.py develop
 ```
