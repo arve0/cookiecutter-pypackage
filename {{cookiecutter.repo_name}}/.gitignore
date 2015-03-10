@@ -1,4 +1,5 @@
 *.py[cod]
+README.rst # generated from .md
 
 # C extensions
 *.so
