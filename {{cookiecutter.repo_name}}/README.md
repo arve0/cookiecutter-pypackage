@@ -21,7 +21,7 @@ TODO: Write example.
 
 ## API reference
 
-API reference is at http://{{ cookiecutter.repo_name }}.rtfd.org."""
+API reference is at http://{{ cookiecutter.repo_name }}.rtfd.org.
 
 ## Development
 Install dependencies and link development version of {{ cookiecutter.repo_name }} to pip:
