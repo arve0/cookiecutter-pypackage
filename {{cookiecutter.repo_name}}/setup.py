@@ -5,7 +5,11 @@ import sys
 from setuptools import setup
 
 os.system('make rst')
-readme = open('README.rst').read()
+try:
+    readme = open('README.rst').read()
+except FileNotFoundError:
+    # fallback when installing from source package
+    readme = ''
 
 setup(
     name='{{ cookiecutter.repo_name }}',
