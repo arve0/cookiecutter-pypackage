@@ -1,4 +1,4 @@
 __author__ = '{{ cookiecutter.full_name }}'
 __email__ = '{{ cookiecutter.email }}'
-__version__ = '{{ cookiecutter.version }}'
-
+from os.path import join, dirname
+__version__ = open(join(dirname(__file__), 'VERSION')).read().strip()

@@ -18,7 +18,7 @@ readme = open('README.rst').read()
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version='{{ cookiecutter.version }}',
+    version=open(os.path.join('{{ cookiecutter.repo_name }}', 'VERSION')).read().strip(),
     description='{{ cookiecutter.project_short_description }}',
     long_description=readme,
     author='{{ cookiecutter.full_name }}',
