@@ -27,9 +27,6 @@ lint:
 	flake8 {{ cookiecutter.repo_name }} test
 
 test:
-	py.test
-
-test-all:
 	tox
 
 coverage:

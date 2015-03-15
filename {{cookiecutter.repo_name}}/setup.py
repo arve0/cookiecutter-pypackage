@@ -2,16 +2,7 @@
 
 import os
 import sys
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-
-
-if sys.argv[-1] == 'publish':
-    os.system('python setup.py sdist upload')
-    sys.exit()
+from setuptools import setup
 
 os.system('make rst')
 readme = open('README.rst').read()
@@ -43,6 +34,5 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: Implementation :: PyPy',
     ],
 )
