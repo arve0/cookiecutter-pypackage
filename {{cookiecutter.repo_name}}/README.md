@@ -35,6 +35,7 @@ pip install -r dev-requirements.txt
 
 ### Testing
 ```bash
+pip install tox
 tox
 ```
 
