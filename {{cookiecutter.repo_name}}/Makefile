@@ -43,9 +43,13 @@ docs:
 	$(MAKE) -C docs html
 	open docs/_build/html/index.html
 
-release: clean rst
+release: clean rst tag
 	python setup.py sdist upload
 	python setup.py bdist_wheel upload
+	git push && git push --tags
+
+tag:
+	git tag v`cat {{ cookiecutter.repo_name }}/VERSION`
 
 rst:
 	pandoc --from=markdown --to=rst README.md -o README.rst

@@ -1,4 +1,7 @@
+# development dependencies
 wheel>=0.22
 setuptools-git
+tox
 
--r docs/requirements.txt
+# equivalent to ./setup develop
+-e .

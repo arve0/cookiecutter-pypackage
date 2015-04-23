@@ -29,24 +29,18 @@ Install dependencies and link development version of {{ cookiecutter.repo_name }
 ```bash
 git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}
 cd {{ cookiecutter.repo_name }}
-pip install -r dev-requirements.txt
-./setup.py develop
+pip install -r requirements.txt # install dependencies and {{ cookiecutter.repo_name }}-package
 ```
 
 ### Testing
 ```bash
-pip install tox
 tox
 ```
 
 ### Build documentation locally
-To build the documentation, you'll need sphinx:
-```bash
-pip install -r docs/requirements.txt
-```
-
 To build the documentation:
 ```bash
+pip install -r docs/requirements.txt
 make docs
 ```
 
